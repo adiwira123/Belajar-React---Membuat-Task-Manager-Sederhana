@@ -1,0 +1,7 @@
+# Force GitHub Linguist to recognize JSX files as JavaScript / React
+*.jsx linguist-language=JavaScript
+
+# Mark generated lockfiles and vendor assets so they don't skew repository language stats
+package-lock.json linguist-generated=true
+public/* linguist-vendored=true
+src/assets/* linguist-vendored=true
